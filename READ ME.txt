@@ -1,0 +1,24 @@
+Hello. Included below are the instructions on how to setup the system, the conditions assumed and the following features and restrictions of the system. Please feel free to contact me anytime if you have any questions.
+
+How to setup:
+1. Create database in phpmyadmin: pointblue.
+2. Import pointblue.sql.
+3. Extract the zip folder in C:\xampp\htdocs.
+4. Go to local host and select pointblue folder to open the system. 
+
+The following conditions are assumed:
+
+1. An employee works for 5 days a week and 8 hours per day.
+2. An employee is entitled 2 days leave per month.
+3. Current month is defined as the actual current month (July).
+4. Half day leave corresponds to 4 hours.
+5. If employee filed a leave that is greater than the 24 days, it will be marked as advanced leave and will be highlighted with the color orange.
+
+Restrictions and features added:
+
+1. Start date can't be greater than end date
+2. Start date/End date can't be empty.
+3. Available leave days computed upon selecting employee.
+4. Pro-rated accumulate leave is computed from January to the current month (it will change once the current month is over)
+5. The system will show a warning message once the employee attempts to file another leave after exceeding 24 days standard leave.
+
